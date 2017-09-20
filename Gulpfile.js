@@ -1,15 +1,17 @@
-// Import Gulp and Plumber:
+// Import Gulp and Plumber
 var gulp = require('gulp');
 var plumber = require('gulp-plumber'); // Plumber will make sure if Gulp is not crashing when CSS compilation prints errors.
 
-// SASS compilation task:
+// SASS compilation task
 var sass = require('gulp-sass');
+var concat = require('gulp-concat');
 var cssnano = require('gulp-cssnano');
 gulp.task('sass', function () {
     gulp.src('./src/sass/*.scss')
         .pipe(plumber())
         .pipe(sass())
         .pipe(cssnano())
+        .pipe(concat('main.css'))
         .pipe(gulp.dest('./dist'));
 });
 
