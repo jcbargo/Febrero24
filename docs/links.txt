@@ -1,1 +1,3 @@
-http://blog.pagepro.co/2016/11/22/creating-amp-boilerplate-with-sass/
+AMP boilerplate: http://blog.pagepro.co/2016/11/22/creating-amp-boilerplate-with-sass/
+html & css skeleton: http://getskeleton.com/
+pure css timeline: https://codemyui.com/pure-css-vertical-timeline/

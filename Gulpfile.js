@@ -2,6 +2,14 @@
 var gulp = require('gulp');
 var plumber = require('gulp-plumber'); // Plumber will make sure if Gulp is not crashing when CSS compilation prints errors.
 
+
+gulp.task('move-images',function() {
+    gulp.src([
+      './src/images/*.svg',
+  ],  {base: './src/'})
+        .pipe(gulp.dest('./dist'));
+});
+
 // SASS compilation task
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
@@ -25,7 +33,7 @@ gulp.task('html', function () {
         .pipe(gulp.dest("./dist"))
         .pipe(reload({
             stream: true
-    }));
+        }));
 });
 
 // BrowserSync serve task
@@ -50,4 +58,4 @@ gulp.task('watch', function() {
 });
 
 // Default task
-gulp.task('default', ['sass', 'html', 'watch', 'serve']);
+gulp.task('default', ['move-images', 'sass', 'html', 'watch', 'serve']);
