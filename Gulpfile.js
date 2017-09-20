@@ -2,8 +2,8 @@
 var gulp = require('gulp');
 var plumber = require('gulp-plumber'); // Plumber will make sure if Gulp is not crashing when CSS compilation prints errors.
 
-
-gulp.task('move-images',function() {
+// Images movement tast
+gulp.task('images',function() {
     gulp.src([
       './src/images/*.svg',
   ],  {base: './src/'})
@@ -58,4 +58,4 @@ gulp.task('watch', function() {
 });
 
 // Default task
-gulp.task('default', ['move-images', 'sass', 'html', 'watch', 'serve']);
+gulp.task('default', ['images', 'sass', 'html', 'watch', 'serve']);
