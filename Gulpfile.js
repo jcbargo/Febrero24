@@ -1,21 +1,26 @@
 // Import Gulp and Plumber
 var gulp = require('gulp');
-var plumber = require('gulp-plumber'); // Plumber will make sure if Gulp is not crashing when CSS compilation prints errors.
 
-// Images movement tast
-gulp.task('images',function() {
+// fonts movement tast
+var rename = require('gulp-rename');
+gulp.task('fonts',function() {
     gulp.src([
-      './src/images/*.svg',
+        './src/css/font-icons/icomoon.eot',
+        './src/css/font-icons/icomoon.svg',
+        './src/css/font-icons/icomoon.ttf',
+        './src/css/font-icons/icomoon.woff'
   ],  {base: './src/'})
-        .pipe(gulp.dest('./dist'));
+        .pipe(rename({dirname: ''}))
+        .pipe(gulp.dest('./dist/fonts'));
 });
 
 // SASS compilation task
+var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var cssnano = require('gulp-cssnano');
 gulp.task('sass', function () {
-    gulp.src('./src/sass/*.scss')
+    gulp.src('./src/css/*.scss')
         .pipe(plumber())
         .pipe(sass())
         .pipe(cssnano())
@@ -52,10 +57,9 @@ gulp.task('serve', function() {
 
 // Watch task
 gulp.task('watch', function() {
-    gulp.watch("./src/sass/**", ['sass']);
-    gulp.watch("./dist/*.css", ['html']);
-    gulp.watch("./src/html/*.html", ['html']);
+    gulp.watch("./src/css/**", ['sass']);
+    gulp.watch("./src/html/**", ['html']);
 });
 
 // Default task
-gulp.task('default', ['images', 'sass', 'html', 'watch', 'serve']);
+gulp.task('default', ['fonts', 'sass', 'html', 'watch', 'serve']);
