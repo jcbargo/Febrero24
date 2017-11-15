@@ -1,3 +1,5 @@
 amp boilerplate: http://blog.pagepro.co/2016/11/22/creating-amp-boilerplate-with-sass/
 html & css skeleton: http://getskeleton.com/
 pure css timeline: https://codemyui.com/pure-css-vertical-timeline/
+"Respective" font: https://www.dafont.com/es/respective.font?text=Johanna+%2526+Julio
+"Champagne & Limousines" font: https://www.dafont.com/es/champagne-limousines.font

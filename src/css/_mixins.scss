@@ -1,0 +1,36 @@
+@mixin c-mrgn($index, $columns) {
+    .c-mrgn@{index} {
+        $resultmm : (12/$index * 8.5);
+
+        @media @mediumQuery {
+            padding-left: ~"@{resultmm}%";
+            padding-right: ~"@{resultmm}%";
+        }
+    }
+    .c-mrgn(@index + 1);
+}
+
+.c-mrgn-r(@index) when (@index <= 12) {
+    .c-mrgn-r-@{index} {
+        @resultmm : (12/@index * 8.5);
+
+        @media @mediumQuery {
+            padding-left: 0px;
+            padding-right: ~"@{resultmm}%";
+        }
+    }
+    .c-mrgn-r(@index + 1);
+}
+
+.c-mrgn-l(@index) when (@index <= 12) {
+    @xmm: 8.5;
+    .c-mrgn-l-@{index} {
+        @resultmm : (12/@index * @xmm);
+
+        @media @mediumQuery {
+            padding-left: ~"@{resultmm}%";
+            padding-right: 0px;
+        }
+    }
+    .c-mrgn-l(@index + 1);
+}
