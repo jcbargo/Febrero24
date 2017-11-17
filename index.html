@@ -5,21 +5,28 @@
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
         <style amp-custom>@font-face{font-family:icomoon;src:url(fonts/icomoon.eot?dtsthe);src:url(fonts/icomoon.eot?dtsthe#iefix) format("embedded-opentype"),url(fonts/icomoon.ttf?dtsthe) format("truetype"),url(fonts/icomoon.woff?dtsthe) format("woff"),url(fonts/icomoon.svg?dtsthe#icomoon) format("svg");font-weight:400;font-style:normal}[class*=" icon-"],[class^=icon-]{font-family:icomoon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-agenda:before{content:"\e901"}.icon-church-white:before{content:"\e900"}.icon-wedding-cake:before{content:"\e948"}.icon-bichiios:before{content:"\e949"}
-.vertical-timeline{min-height:100vh;margin:0}.vertical-timeline:before{content:"";position:fixed;top:0;left:50%;bottom:0;transform:translateX(-10%);width:4px;background-color:red}.vertical-timeline .entries{width:calc(100% - 80px);max-width:800px;margin:auto;position:relative;left:-5px}.vertical-timeline .entries .entry{width:calc(50% - 80px);float:left;padding:20px;clear:both;text-align:right}.vertical-timeline .entries .entry:not(:first-child){margin-top:-60px}.vertical-timeline .entries .entry .title{font-size:32px;margin-bottom:12px;position:relative;color:red}.vertical-timeline .entries .entry .title:before{content:"";position:absolute;width:8px;height:8px;border:4px solid #fff;background-color:#1d1d1d;border-radius:100%;top:50%;transform:translateY(-50%);right:-73px;z-index:1}.vertical-timeline .entries .entry .title.big:before{width:24px;height:24px;transform:translate(8px,-50%)}.vertical-timeline .entries .entry .body{color:#aaa}.vertical-timeline .entries .entry .body p{line-height:1.4em}.vertical-timeline .entries .entry:nth-child(2n){text-align:left;float:right}.vertical-timeline .entries .entry:nth-child(2n) .title:before{left:-63px}.vertical-timeline .entries .entry:nth-child(2n) .title.big:before{transform:translate(-8px,-50%)}
-.header{position:relative}.header__image{max-height:850px;max-width:100%!important}.header__nav{font-family:Raleway,sans-serif;display:none}.header__nav ul{list-style:none;list-style-image:none;margin:0}.header__nav li{float:left;margin:0 0 0 50px}.header__nav li:first-child{margin:0}.header__nav a{display:block;color:#fff;padding:5px;text-decoration:none;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out}.header__nav a p{text-transform:lowercase;color:#ccc;text-shadow:#404040 2px 2px 2px;font-size:.8em;font-weight:300;margin-top:0}.header__nav a p:first-child{text-transform:uppercase;color:#fff;font-size:1.25em;font-weight:700;margin-bottom:0}.header__nav a:hover p{color:#d4af37;text-shadow:#404040 2px 2px 2px;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out}@media (min-width:756px){.header__nav{display:block;position:absolute;right:7%;top:5%}.header__nav--fixed{height:100px;background:#000;position:fixed;width:100%;right:auto;top:0}}.header__title{font-family:Parisienne,sans-serif;font-style:normal;font-size:3rem;position:absolute;left:15px;bottom:30px;color:#fff;margin-bottom:0;line-height:.8;text-align:left;text-shadow:#404040 2px 2px 2px}@media (min-width:768px){.header__title{font-size:5rem;left:7%;bottom:15%}}@media (min-width:1024px){.header__title{font-size:6rem}}@media (min-width:1280px){.header__title{font-size:9rem}}@media (min-width:1440px){.header__title{font-size:10rem}}.address{display:flex;flex-direction:row}.address__item{width:50%}.address__item2{width:100px;height:100px;background:red;border-radius:50px}.container{max-width:800px}.1header{margin-top:6rem;text-align:center}.value-prop{margin-top:1rem}.value-props{margin-top:4rem;margin-bottom:4rem}@media (min-width:550px){.1header{margin-top:18rem}.value-props{margin-top:9rem;margin-bottom:7rem}}</style>
+.card{width:475px;box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);margin-top:5em;margin-bottom:3em}.card .cardContent{position:relative;padding:5%;padding-top:15%;margin-top:-10%;padding-bottom:8%;overflow:hidden}.card .cardContent .titleSocial{opacity:0;z-index:1;position:absolute;top:30%;color:#fff;width:70%;right:0;left:0;text-align:center;margin:0 auto;margin-top:.5em;transition:z-index 0s .3s,opacity 0 .3s}.card .cardContent .titleSocial.is-active{opacity:1;z-index:4}.card .cardContent .menuSocial{list-style:none;padding:0;margin:0;position:absolute;width:75%;left:0;top:60%;z-index:1;right:0;margin:0 auto;transition:z-index 0s .3s}.card .cardContent .menuSocial .menuSocialItem{display:inline-block;font-size:30px;width:25%;text-align:center;opacity:0;z-index:1;color:#fff;transition:opacity .25s .3s}.card .cardContent .menuSocial .menuSocialItem .menuSocialItemLink{color:#fff;text-decoration:none;text-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19)}.card .cardContent .menuSocial .menuSocialItem.is-active{opacity:1}.card .cardContent .menuSocial.is-active{z-index:4}.card .cardContent .cardContentButton{cursor:pointer;border:none;border-radius:50%;width:60px;height:60px;box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);color:#fff;background-color:#673ab7;position:absolute;right:4%;top:5px;z-index:3;transition-duration:.2s}.card .cardContent .cardContentButton i{transition-duration:.2s}.card .cardContent .cardContentButton i.is-active{display:none}.card .cardContent .cardContentButton.is-active{right:15%;top:40px;-webkit-animation:a .5s .2s forwards;animation:a .5s .2s forwards}.card .cardContent .cardContentName{color:#673ab7;font-size:25px}.card .cardContent .cardContentJob{color:#9575cd;font-size:15px}.card .cardContent p{margin:0;z-index:2}.card .cardContent .cardContentButton:focus{outline:none}.card .card_image{width:100%;position:relative;margin-bottom:-1%;z-index:2;transition:z-index 0s .2s}.card .card_image i{position:absolute;top:5%;left:5%;color:#fff;font-size:30px;cursor:pointer}.card .card_image img{width:100%}.card .card_image.is-active{z-index:4}@-webkit-keyframes a{to{-webkit-transform:scale(12);transform:scale(12)}}@keyframes a{to{-webkit-transform:scale(12);transform:scale(12)}}
+.directions{display:flex;flex-direction:column}.directions__cards{display:flex;flex-direction:row;justify-content:space-evenly}
+.header{position:relative}.header__image{max-height:850px;max-width:100%!important}.header__nav{font-family:Roboto,sans-serif;display:none}.header__nav ul{list-style:none;list-style-image:none;margin:0}.header__nav li{float:left;margin:0 0 0 50px}.header__nav li:first-child{margin:0}.header__nav a{display:block;color:#fff;padding:5px;text-decoration:none;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out}.header__nav a p{text-transform:lowercase;color:#ccc;text-shadow:#404040 2px 2px 2px;font-size:.8em;font-weight:300;margin-top:0}.header__nav a p:first-child{text-transform:uppercase;color:#fff;font-size:1.25em;font-weight:700;margin-bottom:0}.header__nav a:hover p{color:#d4af37;text-shadow:#404040 2px 2px 2px;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out}@media (min-width:756px){.header__nav{display:block;position:absolute;right:7%;top:5%}.header__nav--fixed{height:100px;background:#000;position:fixed;width:100%;right:auto;top:0}}.header__title{font-style:normal;font-size:3rem;position:absolute;left:15px;bottom:30px;color:#fff;margin-bottom:0;line-height:.8;text-align:left;text-shadow:#404040 2px 2px 2px;font-weight:500}@media (min-width:768px){.header__title{font-size:5rem;left:7%;bottom:15%}}@media (min-width:1024px){.header__title{font-size:6rem}}@media (min-width:1280px){.header__title{font-size:8rem}}@media (min-width:1440px){.header__title{font-size:9rem}}
+body{width:100%;height:100%;margin:0;padding:0;font-family:Roboto,sans-serif}</style>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
         <noscript>
             <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
         </noscript>
 
         <link rel="canonical" href="http://febrero24.com/index.html">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
         <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Parisienne">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,300,700" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
         <link rel="shortcut icon" href="http://localhost:4500/favicon.ico" type="image/x-icon">
 
         <title>Nuestra Boda</title>
+        
         <meta name="description" content="">
         <meta name="author" content="Julio Barboza - @jcbargo">
         <html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
@@ -28,7 +35,7 @@
     </head>
     <body>
         <header class="header">
-            <amp-img class="header__image" alt="" src="images/febrero-24-header.png" width="2400" height="1600" layout="responsive" ></amp-img>
+            <amp-img class="header__image" alt="febrero24 - header" src="images/febrero-24-header.jpg" width="2400" height="1600" layout="responsive" ></amp-img>
             <nav class="js-header-nav header__nav">
                 <ul>
                     <li><a href="#what"><p>Qué?</p><p>acerca del evento</p></a></li>
@@ -39,7 +46,37 @@
             <h1 class="header__title">Nuestra Boda</h1>
         </header>
 
+        <div id="where" class="directions">
+            <h2 class="directions__title">dónde?</h2>
 
+            <div class="directions__cards">
+                <div class="card">
+                    <div class="card_image">
+                        <amp-img src="images/febrero-24-iglesia.jpg" alt="febrero24 - recepcion" class="image" width="2400" height="1600" layout="responsive" ></amp-img>
+                    </div>
+                    <div class="cardContent">
+                        <a  class="address__cicle" href="https://waze.com/ul/hd1u18n6sw" target="_blank">
+                            <button class="cardContentButton"><i class="material-icons">directions_car</i></button>
+                        </a>
+                        <p class="cardContentName">@diaconía de lourdes</p>
+                        <p class="cardContentJob">2pm</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_image">
+                        <amp-img src="images/febrero-24-recepcion.jpg" alt="febrero24 - recepcion" class="image" width="2400" height="1600" layout="responsive" ></amp-img>
+                    </div>
+                    <div class="cardContent">
+                        <a  class="address__cicle" href="https://waze.com/ul/hd1u12y95z" target="_blank">
+                            <button class="cardContentButton"><i class="material-icons">directions_car</i></button>
+                        </a>
+                        <p class="cardContentName">@jardín botánico else kientzler</p>
+                        <p class="cardContentJob">4pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--
         <div class="address">
@@ -51,56 +88,9 @@
             </div>
             <div class="address__item">
                 dirección recepción
-                <a class="address__item2" href="https://waze.com/ul/hd1u12y95z" target="_blank">
+                <a class="address__item2" href="https://waze.com/ul/" target="_blank">
                     <span class="icon-wedding-cake"></i>
                 </a>
-            </div>
-        </div>
-        <div class="vertical-timeline">
-            <div class="entries">
-                <div class="entry">
-                    <div class="title">2011</div>
-                    <div class="body">
-                        <p>Neque sunt voluptatibus repellat pariatur ut enim. Eveniet rerum suscipit eveniet amet dignissimos. Doloremque et distinctio quod molestiae ut.</p>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="title">2012</div>
-                    <div class="body">
-                        <p>Quo nobis cumque dolor iure voluptatem voluptatem alias soluta.</p>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="title big">2013</div>
-                    <div class="body">
-                        <p>Rerum sit libero possimus amet excepturi. Exercitationem enim dolores sunt praesentium dolorum praesentium.</p>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="title">2014</div>
-                    <div class="body">
-                        <p>Voluptatibus veniam ea reprehenderit atque. Reiciendis non laborum adipisci ipsa pariatur omnis. Sed ipsam repudiandae velit. Omnis libero nostrum aperiam nemo dolor ea eos eius. Esse a non itaque quidem.</p>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="title">2015</div>
-                    <div class="body">
-                        <p>VAdipisci totam omnis cum et suscipit excepturi et excepturi. Inventore sequi sit ut aliquid. Modi aut dolores dignissimos.</p>
-                        <p>Delectus facere officia consequuntur molestias deserunt illo. Placeat laudantium beatae natus excepturi ab nihil voluptates.</p>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="title big">2016</div>
-                    <div class="body">
-                        <p>Impedit dolorem commodi explicabo fugit aut alias voluptatem. Magnam earum rerum quae dicta quibusdam aliquam ut.</p>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="title">2017</div>
-                    <div class="body">
-                        <p>Qui facere eos aut suscipit doloremque quos...</p>
-                    </div>
-                </div>
             </div>
         </div>
         -->
