@@ -1,0 +1,43 @@
+@import '00-vars';
+
+.deck {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+
+    @media all and (max-width: 767px) {
+        padding: 0 7%;
+    }
+
+    &--odd {
+        background-color: $color-gray-white-smoke;
+    }
+
+    &__title {
+        font-family: 'Roboto',sans-serif;
+        font-size: 2rem;
+        line-height: 0.8;
+        text-align: left;
+        font-weight: 500;
+        color: $color-gray-eclipse;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        @media (min-width: 767px) {
+            flex-direction: row;
+        }
+    }
+
+    &--row {
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media (min-width: 767px) {
+            justify-content: space-evenly;
+        }
+    }
+}

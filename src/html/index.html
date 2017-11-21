@@ -14,16 +14,14 @@
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
         <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Parisienne">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
         <link rel="shortcut icon" href="http://localhost:4500/favicon.ico" type="image/x-icon">
 
         <title>Nuestra Boda</title>
-        
-        <meta name="description" content="">
+
+        <meta name="description" content="Nuestra Boda - Febrero 24, 2018">
         <meta name="author" content="Julio Barboza - @jcbargo">
         <html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -31,7 +29,11 @@
     </head>
     <body>
         <header class="header">
-            <amp-img class="header__image" alt="febrero24 - header" src="images/febrero-24-header.jpg" width="2400" height="1600" layout="responsive" ></amp-img>
+            <div class="header__focal-point header__focal-point--right-3 header__focal-point--up-3">
+                <div>
+                    <amp-img class="header__image" alt="febrero24 - header" src="images/febrero-24-header.jpg" width="2400" height="1600" layout="responsive" ></amp-img>
+                </div>
+            </div>
             <nav class="js-header-nav header__nav">
                 <ul>
                     <li><a href="#what"><p>Qué?</p><p>acerca del evento</p></a></li>
@@ -42,55 +44,71 @@
             <h1 class="header__title">Nuestra Boda</h1>
         </header>
 
-        <div id="where" class="directions">
-            <h2 class="directions__title">dónde?</h2>
-
-            <div class="directions__cards">
+        <div id="what" class="deck deck--odd">
+            <h2 class="deck__title">qué?</h2>
+            <div class="deck__cards">
                 <div class="card">
-                    <div class="card_image">
+                    <div class="card__image">
                         <amp-img src="images/febrero-24-iglesia.jpg" alt="febrero24 - recepcion" class="image" width="2400" height="1600" layout="responsive" ></amp-img>
                     </div>
-                    <div class="cardContent">
-                        <a  class="address__cicle" href="https://waze.com/ul/hd1u18n6sw" target="_blank">
-                            <button class="cardContentButton"><i class="material-icons">directions_car</i></button>
+                    <div class="card__content">
+                        <a href="#" target="_blank">
+                            <button class="card__button"><i class="material-icons">more_vert</i></button>
                         </a>
-                        <p class="cardContentName">@diaconía de lourdes</p>
-                        <p class="cardContentJob">2pm</p>
+                        <p class="card__title">@diaconía de lourdes</p>
+                        <p class="card__description">2pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="when" class="deck">
+            <h2 class="deck__title">cuándo?</h2>
+            <div class="deck__cards">
+                <div class="card">
+                    <div class="card__image card__image--small">
+                        <amp-img src="images/febrero-24-calendario.png" alt="febrero24 - calendario" class="image" width="300" height="300" layout="responsive" ></amp-img>
+                    </div>
+                    <div class="card__content card__content--dark">
+                        <a href="https://goo.gl/rZGEZG" target="_blank">
+                            <button class="card__button"><i class="material-icons">insert_invitation</i></button>
+                        </a>
+                        <p class="card__title">24 de febrero, 2018</p>
+                        <p class="card__description">1:30 pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="where" class="deck deck--odd">
+            <h2 class="deck__title">dónde?</h2>
+            <div class="deck__cards deck--row">
+                <div class="card card--small">
+                    <div class="card__image">
+                        <amp-img src="images/febrero-24-iglesia.jpg" alt="febrero24 - iglesia" class="image" width="2400" height="1600" layout="responsive" ></amp-img>
+                    </div>
+                    <div class="card__content">
+                        <a href="https://goo.gl/SJWKuM" target="_blank">
+                            <button class="card__button"><i class="material-icons">directions_car</i></button>
+                        </a>
+                        <p class="card__title">@diaconía de lourdes</p>
+                        <p class="card__description">1:30 pm</p>
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card_image">
+                <div class="card card--small">
+                    <div class="card__image">
                         <amp-img src="images/febrero-24-recepcion.jpg" alt="febrero24 - recepcion" class="image" width="2400" height="1600" layout="responsive" ></amp-img>
                     </div>
-                    <div class="cardContent">
-                        <a  class="address__cicle" href="https://waze.com/ul/hd1u12y95z" target="_blank">
-                            <button class="cardContentButton"><i class="material-icons">directions_car</i></button>
+                    <div class="card__content">
+                        <a href="https://goo.gl/oLMZgJ" target="_blank">
+                            <button class="card__button"><i class="material-icons">directions_car</i></button>
                         </a>
-                        <p class="cardContentName">@jardín botánico else kientzler</p>
-                        <p class="cardContentJob">4pm</p>
+                        <p class="card__title">@jardín botánico else kientzler</p>
+                        <p class="card__description">4:00 pm</p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!--
-        <div class="address">
-            <div class="address__item">
-                dirección iglesia
-                <a  class="address__cicle" href="https://waze.com/ul/hd1u18n6sw" target="_blank">
-                    <span class="icon-church-white"></i>
-                </a>
-            </div>
-            <div class="address__item">
-                dirección recepción
-                <a class="address__item2" href="https://waze.com/ul/" target="_blank">
-                    <span class="icon-wedding-cake"></i>
-                </a>
-            </div>
-        </div>
-        -->
-
-        <!-- <script type="javascript" src="https://cdn.ampproject.org/v0.js"></script> -->
     </body>
 </html>

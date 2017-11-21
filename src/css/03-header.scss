@@ -1,11 +1,46 @@
-
+@import '00-vars';
 
 .header {
     position: relative;
 
+    &__focal-point  {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+
+        div {
+            position: relative;
+            max-width: none;
+            height: auto;
+        }
+    }
+
+    @media all and (max-width: 767px) {
+
+        &__focal-point {
+            div {
+                margin: -3em -4em;
+            }
+
+            /* Landscape up (Total 6em) */
+            &--up-3 div {
+                margin-top:    -1.5em;
+                margin-bottom: -4.5em;
+            }
+
+            &--right-3 div {
+                margin-left:  -6em;
+                margin-right: -2em;
+            }
+        }
+    }
+
     &__image {
         max-height: 850px;
-        max-width: 100% !important;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        -ms-interpolation-mode: bicubic;
     }
 
     &__nav {
@@ -30,7 +65,7 @@
 
         a {
             display: block;
-            color: #FFF;
+            color: $color-white;
             padding: 5px;
             text-decoration: none;
 
@@ -39,15 +74,15 @@
 
             p {
                 text-transform: lowercase;
-                color: #CCC;
-                text-shadow: #404040 2px 2px 2px;
+                color: $color-gray-very-light;
+                text-shadow: $color-gray-eclipse 2px 2px 2px;
                 font-size: 0.8em;
                 font-weight: 300;
                 margin-top: 0px;
 
                 &:first-child {
                     text-transform: uppercase;
-                    color: #FFF;
+                    color: $color-white;
                     font-size: 1.25em;
                     font-weight: 700;
                     margin-bottom: 0px;
@@ -55,15 +90,15 @@
             }
 
             &:hover p {
-                color: #d4af37;
-                text-shadow: #404040 2px 2px 2px;
+                color: $color-yellow-metallic-gold;
+                text-shadow: $color-gray-eclipse 2px 2px 2px;
 
                 -moz-transition: all 0.3s ease-in-out;
                 -webkit-transition: all 0.3s ease-in-out;
             }
         }
 
-        @media (min-width: 756px) {
+        @media (min-width: 767px) {
             display: block;
             position: absolute;
             right: 7%;
@@ -81,22 +116,21 @@
     }
 
     &__title {
-        // font-family: 'Parisienne',sans-serif;
-        // font-family: 'Tangerine',sans-serif;
+        font-family: 'Parisienne',sans-serif;
         // font-family: 'Roboto',sans-serif;
         font-style: normal;
-        font-size: 3rem;
+        font-size: 4rem;
         position: absolute;
         left: 15px;
         bottom: 30px;
-        color: #fff;
         margin-bottom: 0px;
         line-height: 0.8;
         text-align: left;
-        text-shadow: #404040 2px 2px 2px;
+        text-shadow: $color-gray-eclipse 2px 2px 2px;
         font-weight: 500;
+        color: $color-white;
 
-        @media (min-width: 768px) {
+        @media (min-width: 767) {
             font-size: 5rem;
             left: 7%;
             bottom: 15%;
