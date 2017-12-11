@@ -27,20 +27,26 @@
 
         <script async src="https://cdn.ampproject.org/v0.js"></script>
     </head>
-    <body>
+    <body>   
+        <input id="toggle" type="checkbox">
+
+        <label class="toggle-container" for="toggle">
+            <span class="button button-toggle"></span>
+        </label>
+
+        <nav class="nav">
+            <a class="nav-item" href="#">home</a>
+            <a class="nav-item" href="#time">fecha & hora</a>
+            <a class="nav-item" href="#church">ceremonia</a>
+            <a class="nav-item" href="#dinner">recepción</a>
+        </nav>
+
         <header class="header">
             <div class="header__focal-point header__focal-point--right-3 header__focal-point--up-3">
                 <div>
                     <amp-img class="header__image" alt="febrero24 - header" src="images/febrero-24-header.jpg" width="2400" height="1600" layout="responsive" ></amp-img>
                 </div>
             </div>
-            <nav class="js-header-nav header__nav">
-                <ul>
-                    <li><a href="#what"><p>Qué?</p><p>acerca del evento</p></a></li>
-                    <li><a href="#when"><p>Cuándo?</p><p>fecha &amp; horas</p></a></li>
-                    <li><a href="#where"><p>Dónde?</p><p>lugares &amp; direcciones</p></a></li>
-                </ul>
-            </nav>
             <h1 class="header__title">Nuestra Boda</h1>
         </header>
 
@@ -59,7 +65,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div id="time" class="card">
                 <div class="card__image card__image--small">
                     <amp-img src="images/febrero-24-calendario.png" alt="febrero24 - calendario" class="image" width="300" height="300" layout="responsive" ></amp-img>
                 </div>
@@ -74,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div id="church" class="card">
                 <div class="card__image">
                     <amp-img src="images/febrero-24-iglesia.jpg" alt="febrero24 - iglesia" class="image" width="2400" height="1600" layout="responsive" ></amp-img>
                 </div>
@@ -89,7 +95,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div id="dinner" class="card">
                 <div class="card__image">
                     <amp-img src="images/febrero-24-recepcion.jpg" alt="febrero24 - recepcion" class="image" width="2400" height="1600" layout="responsive" ></amp-img>
                 </div>
