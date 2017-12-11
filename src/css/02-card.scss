@@ -4,17 +4,17 @@
     width: 100%;
     // margin: 0 auto;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 3em;
+    margin: 1em 0;
 
     @media (min-width: 767px) {
         width: 475px;
     }
 
-    &--small {
-        width: 46.5%;
+    &--desktop {
+        display: none;
 
         @media (min-width: 767px) {
-            width: 475px;
+            display: block;
         }
     }
 
@@ -31,7 +31,7 @@
         transition: z-index 0s 0.2s;
 
         &--small {
-            width: 81.5%;
+            width: 67.5%;
             margin: 0 auto;
         }
 
@@ -41,12 +41,15 @@
     }
 
     &__content {
-        background-color: $color-white;
         position: relative;
+        margin-top: -5%;
+    }
 
+    &__text {
+        background-color: $color-white;
+        margin-top: 5%;
         padding: 5%;
-        margin-top: -10%;
-        padding-bottom: 8%;
+
         overflow: hidden;
 
         &--dark {
@@ -57,11 +60,13 @@
     &__title {
         color: $color-purple-marsala;
         font-size: 25px;
+        line-height: 0px;
     }
 
     &__description {
         color: $color-purple-marsala;
-        font-size: 15px;
+        font-size: 18px;
+        line-height: 25px;
     }
 
     &__button {
@@ -75,8 +80,9 @@
         background-color: $color-purple-marsala;
         position: absolute;
         right: 4%;
-        top: 5px;
+        top: -30px;
         z-index: 3;
+
         -webkit-transition-duration: 0.2s;
         -moz-transition-duration: 0.2s;
         -o-transition-duration: 0.2s;
