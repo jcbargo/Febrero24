@@ -5,11 +5,12 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 0 15px;
-
+    
     @media (min-width: 767px) {
         flex-direction: row;
         justify-content: space-evenly;
-            padding: 0 7%;
+        padding: 0 7%;
+        margin-top: 1em;
     }
 
     &__title {

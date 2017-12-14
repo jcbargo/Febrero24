@@ -73,7 +73,7 @@
             -webkit-transition: all 0.3s ease-in-out;
 
             p {
-                text-transform: lowercase;
+                // text-transform: lowercase;
                 color: $color-gray-very-light;
                 text-shadow: $color-gray-eclipse 2px 2px 2px;
                 font-size: 0.8em;
@@ -90,6 +90,7 @@
             }
 
             &:hover p {
+                // color: $color-purple-marsala;
                 color: $color-yellow-metallic-gold;
                 text-shadow: $color-gray-eclipse 2px 2px 2px;
 
@@ -130,10 +131,10 @@
         font-weight: 500;
         color: $color-white;
 
-        @media (min-width: 767) {
+        @media (min-width: 767px) {
             font-size: 5rem;
             left: 7%;
-            bottom: 15%;
+            bottom: 7%;
         }
 
         @media (min-width: 1024px) {
