@@ -8,6 +8,7 @@
 
     @media (min-width: 767px) {
         width: 390px;
+        margin: 1em 0.7em;
     }
 
     &--dark {
@@ -59,7 +60,7 @@
 
     &__title {
         color: $color-purple-marsala;
-        font-size: 25px;
+        font-size: 22px;
         line-height: 0px;
     }
 
