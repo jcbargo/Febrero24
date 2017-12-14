@@ -131,65 +131,61 @@
 
 .nav {
     display: inline-block;
-    margin: 25px 25px 20px;
+    margin: 35px 35px 20px;
     // Don't want pointer-events as menu is closed
     pointer-events: none;
     transition: $transition-duration;
 
-    @media all and (min-width: 767px) {
-        display: none;
-    }
-}
-
-// Showing nav items as lines, making up the hamburger menu icon
-.nav-item {
-    position: relative;
-    display: inline-block;
-    float: left;
-    clear: both;
-    color: transparent;
-    font-size: 18px;
-    letter-spacing: -6.5px;
-    height: 7px;
-    line-height: 7px;
-    white-space: nowrap;
-    transform: scaleY(0.2);
-    transition: $transition-duration, opacity 1s;
-    text-decoration: none;
-    // Setting delays for the nav items in close transition
-    @for $i from 1 through $items {
-        &:nth-child(#{$i}) {
-            $delay: ($i - 1) * $transition-delay;
-            transition-delay: $delay;
-            &:before {
+    // Showing nav items as lines, making up the hamburger menu icon
+    a {
+        position: relative;
+        display: inline-block;
+        float: left;
+        clear: both;
+        color: transparent;
+        font-size: 18px;
+        letter-spacing: -7px;
+        height: 7px;
+        line-height: 7px;
+        white-space: nowrap;
+        transform: scaleY(0.2);
+        transition: $transition-duration, opacity 1s;
+        text-decoration: none;
+        // Setting delays for the nav items in close transition
+        @for $i from 1 through $items {
+            &:nth-child(#{$i}) {
+                $delay: ($i - 1) * $transition-delay;
                 transition-delay: $delay;
+                &:before {
+                    transition-delay: $delay;
+                }
             }
         }
-    }
-    // Adjusting width for the first line
-    &:nth-child(1) {
-        letter-spacing: -6.75px;
-    }
-    // Adjusting width for the second line
-    &:nth-child(2) {
-        letter-spacing: -7.15px;
-    }
-    // Adjusting from the fourth element onwards
-    &:nth-child(n + 4) {
-        letter-spacing: -8px;
-        margin-top: -7px;
-        opacity: 0;
-    }
-    // Getting the lines for the hamburger menu icon
-    &:before {
-        position: absolute;
-        content: '';
-        top: 50%;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: $color-purple-marsala;
-        transform: translateY(-50%) scaleY(5);
-        transition: $transition-duration;
+        // Adjusting width for the first line
+        &:nth-child(1) {
+            letter-spacing: -7.25px;
+        }
+        // Adjusting width for the second line
+        &:nth-child(2) {
+            letter-spacing: -7.45px;
+        }
+        // Adjusting from the fourth element onwards
+        &:nth-child(n + 4) {
+            letter-spacing: -8px;
+            margin-top: -7px;
+            opacity: 0;
+        }
+        // Getting the lines for the hamburger menu icon
+        &:before {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $color-purple-marsala;
+            transform: translateY(-50%) scaleY(5);
+            transition: $transition-duration;
+        }
     }
 }
