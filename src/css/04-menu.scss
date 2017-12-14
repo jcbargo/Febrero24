@@ -10,6 +10,10 @@
     &~.toggle-container .button-toggle {
         box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 8px rgba(0, 0, 0, 0.1);
     }
+
+    @media all and (min-width: 767px) {
+        display: none;
+    }
 }
 
 #toggle:focus {
@@ -116,6 +120,10 @@
     &:after {
         transform: translateY(-50%) rotate(-45deg) scale(0);
     }
+
+    @media all and (min-width: 767px) {
+        display: none;
+    }
 }
 
 
@@ -127,6 +135,10 @@
     // Don't want pointer-events as menu is closed
     pointer-events: none;
     transition: $transition-duration;
+
+    @media all and (min-width: 767px) {
+        display: none;
+    }
 }
 
 // Showing nav items as lines, making up the hamburger menu icon
@@ -137,7 +149,7 @@
     clear: both;
     color: transparent;
     font-size: 18px;
-    letter-spacing: -6.2px;
+    letter-spacing: -6.5px;
     height: 7px;
     line-height: 7px;
     white-space: nowrap;
@@ -156,11 +168,11 @@
     }
     // Adjusting width for the first line
     &:nth-child(1) {
-        letter-spacing: -8px;
+        letter-spacing: -6.75px;
     }
     // Adjusting width for the second line
     &:nth-child(2) {
-        letter-spacing: -7px;
+        letter-spacing: -7.15px;
     }
     // Adjusting from the fourth element onwards
     &:nth-child(n + 4) {

@@ -14,20 +14,24 @@
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
         <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Parisienne">
-
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-        <link rel="shortcut icon" href="http://localhost:4500/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="http://febrero24.com/favicon.ico" type="image/x-icon">
 
-        <title>Nuestra Boda</title>
+        <title>Johanna & Julio</title>
 
         <meta name="description" content="Nuestra Boda - Febrero 24, 2018">
-        <meta name="author" content="Julio Barboza - @jcbargo">
         <html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+        <meta property="og:title" content="Johanna & Julio">
+        <meta property="og:image" content="http://febrero24.com/images/febrero-24-logo.jpg">
+        <meta property="og:description" content="Nuestra Boda - Febrero 24, 2018">
+
+        <meta name="author" content="Julio Barboza - @jcbargo">
 
         <script async src="https://cdn.ampproject.org/v0.js"></script>
     </head>
-    <body>   
+    <body>
         <input id="toggle" type="checkbox">
 
         <label class="toggle-container" for="toggle">
@@ -35,10 +39,9 @@
         </label>
 
         <nav class="nav">
-            <a class="nav-item" href="#">home</a>
-            <a class="nav-item" href="#time">fecha & hora</a>
-            <a class="nav-item" href="#church">ceremonia</a>
-            <a class="nav-item" href="#dinner">recepción</a>
+            <a class="nav-item" href="#when">fecha & hora</a>
+            <a class="nav-item" href="#where-ceremony">ceremonia</a>
+            <a class="nav-item" href="#where-dinner">recepción</a>
         </nav>
 
         <header class="header">
@@ -50,22 +53,16 @@
             <h1 class="header__title">Nuestra Boda</h1>
         </header>
 
-        <div class="deck">
-            <div class="card card--desktop">
-                <div class="card__image">
-                    <amp-img src="images/febrero-24-iglesia.jpg" alt="febrero24 - recepcion" class="image" width="2400" height="1600" layout="responsive" ></amp-img>
-                </div>
-                <div class="card__content">
-                    <a href="#" target="_blank">
-                        <button class="card__button"><i class="material-icons">more_vert</i></button>
-                    </a>
-                    <div class="card__text card__text--dark">
-                        <h4 class="card__title">invitación</h4>
-                    </div>
-                </div>
-            </div>
+        <nav class="js-header-nav header__nav">
+            <ul>
+                <li><a href="#what"><p>Qué?</p><p>acerca del evento</p></a></li>
+                <li><a href="#when"><p>Cuándo?</p><p>fecha &amp; horas</p></a></li>
+                <li><a href="#where-ceremony"><p>Dónde?</p><p>lugares &amp; direcciones</p></a></li>
+            </ul>
+        </nav>
 
-            <div id="time" class="card">
+        <div class="deck">
+            <div id="when" class="card">
                 <div class="card__image card__image--small">
                     <amp-img src="images/febrero-24-calendario.png" alt="febrero24 - calendario" class="image" width="300" height="300" layout="responsive" ></amp-img>
                 </div>
@@ -75,12 +72,12 @@
                     </a>
                     <div class="card__text card__text--dark">
                         <h4 class="card__title">fecha & hora</h4>
-                        <p class="card__description"><b>fecha:</b> 24 de febrero, 2018 <br/> <b>hora:</b> 1:45pm</p>
+                        <p class="card__description"><b>fecha:</b> 24 de febrero, 2018 <br/> <b>hora:</b> 2:00pm</p>
                     </div>
                 </div>
             </div>
 
-            <div id="church" class="card">
+            <div id="where-ceremony" class="card">
                 <div class="card__image">
                     <amp-img src="images/febrero-24-iglesia.jpg" alt="febrero24 - iglesia" class="image" width="2400" height="1600" layout="responsive" ></amp-img>
                 </div>
@@ -90,12 +87,12 @@
                     </a>
                     <div class="card__text">
                         <h4 class="card__title">ceremonia</h4>
-                        <p class="card__description"><b>lugar:</b> diaconía de lourdes <br/> <b>hora:</b> 1:30 pm</p>
+                        <p class="card__description"><b>lugar:</b> iglesia de Lourdes <br/> <b>hora:</b> 2:00 pm</p>
                     </div>
                 </div>
             </div>
 
-            <div id="dinner" class="card">
+            <div id="where-dinner" class="card">
                 <div class="card__image">
                     <amp-img src="images/febrero-24-recepcion.jpg" alt="febrero24 - recepcion" class="image" width="2400" height="1600" layout="responsive" ></amp-img>
                 </div>
@@ -105,10 +102,40 @@
                     </a>
                     <div class="card__text">
                         <h4 class="card__title">recepción</h4>
-                        <p class="card__description"><b>lugar:</b> jardín botánico else kientzler <br/> <b>hora:</b> 4:00 pm</p>
+                        <p class="card__description"><b>lugar:</b> jardín botánico Else Kientzler <br/> <b>hora:</b> al finalizar la ceremonia</p>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="deck">
+
+            <div class="card card--desktop">
+                <div class="card__image">
+                    <amp-img src="images/febrero-24-anillo.jpg" alt="febrero24 - sesion" class="image" width="2400" height="1600" layout="responsive" ></amp-img>
+                </div>
+                <div class="card__content">
+                    <div class="card__text">
+                        <h4 class="card__title">Dios es amor</h4>
+                        <p class="card__description">y quien vive en el amor permanece en Dios y Dios en él</p>
+                        <p class="card__footer">Juan 4:16</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card--desktop">
+                <div class="card__image">
+                    <amp-img src="images/febrero-24-amor.jpg" alt="febrero24 - sesion" class="image" width="2400" height="1600" layout="responsive" ></amp-img>
+                </div>
+                <div class="card__content">
+                    <div class="card__text">
+                        <h4 class="card__title">El amor es preocuparse por el otro</h4>
+                        <p class="card__description">ansía <b>el bien del amado</b>: se convierte en renuncia, está dispuesto al sacrificio, más aún, <b>lo busca</b>.</p>
+                        <p class="card__footer">Deus caritas est</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </body>
 </html>
